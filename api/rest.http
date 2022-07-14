@@ -1,0 +1,43 @@
+### root api
+GET   http://localhost:8000/
+
+
+### fetch all task 
+GET  http://localhost:8000/api/v1/task/
+Content-Type: application/json
+
+
+### add new task
+
+POST http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+{
+   "task": "coding",
+   "hr": "10"
+}
+
+
+
+### update or switch task
+PATCH  http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+{
+   "_id": "62c670f5457a079e8608b2fa",
+   "type": "entry"
+}
+
+
+### delete the task
+DELETE  http://localhost:8000/api/v1/task/
+Content-Type: application/json
+
+{
+   "ids":
+   [
+     
+
+
+   ]
+}
