@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express, { Router } from "express";
 import helmet from "helmet";
 import cors from "cors";
