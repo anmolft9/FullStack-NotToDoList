@@ -5,7 +5,7 @@ import path from "path";
 
 const app = express();
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 //middlewares
 app.use(express.json());
@@ -20,7 +20,7 @@ dbConnect();
 import taskRouter from "./src/routers/taskRouter.js";
 app.use("/api/v1/task", taskRouter);
 
-///static content serve  ////
+///static content serve  ////merged the frontend part aswell
 const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, "/frontend/build")));
 app.use("/", (req, res) => {
