@@ -23,9 +23,9 @@ app.use("/api/v1/task", taskRouter);
 
 ///static content serve  ////merged the frontend part aswell
 const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "/frontend/build")));
+app.use(express.static(path.join(__dirname, "/Frontend/build")));
 app.use("/", (req, res) => {
-  res.send(path.join(__dirname, "/frontend/build/index.html"));
+  res.send(path.join(__dirname, "/Frontend/build/index.html"));
 });
 
 app.use("/", (req, res) => {
