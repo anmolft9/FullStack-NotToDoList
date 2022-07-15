@@ -123,7 +123,7 @@ function App() {
     }
     // console.log(deleteTask);
 
-    const data = await deleteTask(ids);
+    const data = await deleteTask();
 
     if (data.status === "success") {
       getTaskFromServer();
